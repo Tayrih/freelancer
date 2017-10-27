@@ -12,7 +12,7 @@ body {
       font-size: 16px;
       line-height: 1.71429;
       color: #fff;
-      background-color: black; /*borrar*/
+      background-color: #18bc9c; /*borrar*/
 }
 
 img {
@@ -77,18 +77,40 @@ font-family: 'Montserrat', sans-serif; */
       z-index: 10000;
 }
 
-#home{
+.logo {
+      right: 8em;
+      display: inline-block;
+      float: left;
+      top: 0;
+      height: 4em;
+      line-height: 3em;
+      position: absolute;
+      cursor: default;
+      color: inherit;
+}
 
-  text-align: center;
-  margin-right: auto;
-  margin-left: auto;
-  padding-left: 14px;
-  padding-right: 14px;
+#home {
+
+      text-align: center;
+      margin-right: auto;
+      margin-left: auto;
+      padding-left: 14px;
+      padding-right: 14px;
 
 }
 
 .main {
-  position: relative;
-  margin: 0;
-  overflow-x: hidden;
+      position: relative;
+      margin: 0;
+      overflow-x: hidden;
+}
+
+.main.fullscreen {
+      min-height: 100%;
+}
+
+.main.style1 {
+    justify-content: center;
+    text-align: center;
+    padding: 8em 0 2em 0;
 }
