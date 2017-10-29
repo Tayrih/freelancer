@@ -12,12 +12,11 @@ body {
 }
 
 .container {
-
-        width: 100%;
         padding-right: 15px;
         padding-left: 15px;
         margin-right: auto;
         margin-left: auto;
+        width: 100%;
 }
 
 a {
@@ -25,9 +24,40 @@ a {
         text-decoration: none;
 }
 
+.starblue:before, .starblue:after {
+        content: " ";
+        display: inline-block;
+        border: 1px solid #2c3e50;
+        background: #2c3e50;
+        width: 10%;
+        height: 2px;
+        margin-bottom: 9px;
+        margin-left: 5px;
+        margin-right: 5px;
+}
+
+.starwhite:before, .starwhite:after {
+        content: " ";
+        display: inline-block;
+        border: 1px solid #fff;
+        background: #fff;
+        width: 10%;
+        height: 2px;
+        margin-bottom: 9px;
+        margin-left: 5px;
+        margin-right: 5px;
+}
+.starwhite, .starblue {
+        font-size: 30px;
+}
+
 .text-title {
         font-family: 'Montserrat', sans-serif;
         text-transform: uppercase;
+}
+
+.menu.text-title li:hover {
+        color: #18bc9c;
 }
 
 #menu-nav {
@@ -151,11 +181,18 @@ a {
             margin-bottom: 15px;
 }
 
+#sectionAbout form button:hover,  .information.icon a:hover {
+            background-color: #fff;
+            color: #18bc9c;
+}
+
 #sectionContact {
             background-color: inherit;
             color: #212529;
             padding: 100px 0;
             text-align: center;
+
+
 }
 
 #sectionContact h1 {
@@ -164,15 +201,103 @@ a {
 }
 
 #sectionContact form {
-            font-size: 25px;
             color: #868e96;
+            font-size: 25px;
+            margin: 0;
+            margin-top: 10px;
+            margin-left: 20%;
+            margin-right: 20%;
+            padding: 0;
             text-align: left;
 }
 
+#sectionContact form div label{
+            display: block;
+            width: 100%;
+}
+
 #sectionContact form  div input {
-            border: 2px solid black;
+            border: none;
+            color: #868e96;
+            display: block;
+            font-size: 25px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            text-align: left;
+            width: 100%;
+}
+
+#sectionContact form  div textarea {
+            border: none;
+            color: #868e96;
+            display: block;
+            font-size: 25px;
+            padding-top: 15px;
+            padding-bottom: 15px;
+            text-align: left;
+            width: 100%;
+}
+
+#sectionContact form  div button {
+            background-color: #18bc9c;
+            border: none;
+            border-radius: 5px;
+            color: #fff;
+            font-size: 20px;
+            font-family: 'Lato', sans-serif;
+            padding: 10px;
+            margin-top: 10px;
+
 }
 
 footer {
           background-color: #2c3e50;
+          margin: 0;
+          padding-left: 15%;
+          padding-right: 15%;
+}
+
+footer h1 {
+          font-size: 1.35em;
+          margin: 0;
+          margin-bottom: 30px;
+
+}
+
+footer p {
+          margin: 0;
+          font-size: 18px;
+          margin-bottom: 15px;
+
+}
+
+footer .foter {
+          padding-top: 50px;
+
+}
+
+footer .information {
+
+          float: left;
+          width: 300px;
+          text-align: center;
+          margin-bottom: 50px;
+
+}
+
+
+footer .icon i {
+          font-size: 20px;
+          line-height: 45px;
+          display: inline-block;
+          width: 50px;
+          height: 50px;
+          text-align: center;
+          border: 2px solid #fff;
+          border-radius: 100%;
+}
+
+footer .copyright {
+          text-align: center;
+          padding-bottom: 25px;
 }
