@@ -14,7 +14,7 @@ Para completar este reto, se ha hecho una copia del  [**repositorio**](https://g
 
 3. Se dió estilos al documento html.
 
-El resultado a obtener: ![Freelancer Website](docs/fullpage.png)
+El resultado a obtener: ![Freelancer Website](assets/docs/fullpage.png)
 
 ## Consideraciones
 
