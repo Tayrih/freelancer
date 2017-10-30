@@ -25,6 +25,7 @@ a {
   text-decoration: none;
 }
 
+/*Before y after para el icono de la estrella*/
 
 .starblue:before, .starblue:after {
   content: " ";
@@ -62,6 +63,8 @@ a {
 .menu.text-title li:hover {
   color: #18bc9c;
 }
+
+/*menu de navegacion */
 
 #menu-nav {
   position: fixed;
@@ -116,7 +119,7 @@ a {
   list-style: none;
   font-weight: 700;
 }
-
+/*section start bootstrap*/
 #sectionHeader {
   background-color: #18bc9c;
   padding-bottom: 100px;
@@ -142,6 +145,7 @@ a {
   margin: 0px auto;
 }
 
+/*section portfolio*/
 #sectionPortfolio {
   background-color: inherit;
   color: #212529;
@@ -171,6 +175,7 @@ a {
 .image:hover {
   opacity: 0.4;
 }
+/*section about, usando @media para @responsive*/
 
 @media screen and (min-width: 1000px) {
   #sectionAbout {
@@ -193,6 +198,29 @@ a {
   }
 }
 
+@media screen and (max-width: 1000px) {
+  #sectionAbout {
+    background-color: #18bc9c;
+    padding: 100px 0;
+    text-align: center;
+  }
+  #sectionAbout h1 {
+    font-size: 3em;
+    margin: 0px auto;
+  }
+  #sectionAbout div p {
+    display: inline-block;
+    font-size: 20px;
+    margin: 0;
+    padding-right: 14%;
+    padding-left: 14%;
+    margin-bottom: 15px;
+    text-align: left;
+    width: 100%;
+  }
+}
+
+
 #sectionAbout form button {
   background-color: inherit;
   border: 2px solid #fff;
@@ -208,8 +236,10 @@ a {
 #sectionAbout form button:hover {
   background-color: #fff;
   color: #18bc9c;
+  transition: 2s;
 }
 
+/*section contact*/
 #sectionContact {
   background-color: inherit;
   color: #212529;
@@ -286,7 +316,7 @@ a {
   padding: 15px;
   margin-top: 10px;
 }
-
+/*pie de pagina*/
 footer {
   background-color: #2c3e50;
   margin: 0;
@@ -352,26 +382,4 @@ footer .copyright {
   width: 100%:;
   text-align: center;
   padding-bottom: 25px;
-}
-
-@media screen and (max-width: 1000px) {
-  #sectionAbout {
-    background-color: #18bc9c;
-    padding: 100px 0;
-    text-align: center;
-  }
-  #sectionAbout h1 {
-    font-size: 3em;
-    margin: 0px auto;
-  }
-  #sectionAbout div p {
-    display: inline-block;
-    font-size: 20px;
-    margin: 0;
-    padding-right: 14%;
-    padding-left: 14%;
-    margin-bottom: 15px;
-    text-align: left;
-    width: 100%;
-  }
 }
