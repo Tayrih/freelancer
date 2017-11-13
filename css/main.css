@@ -173,7 +173,7 @@ a {
   top: 0px;
   left: 0px;
   z-index: 20000;
-  visibility: hidden;
+  display: none;
 }
 
 .images img {
